@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메가커피</title>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/order.js"></script>
+    <script src="./js/pagination.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="header">
+        <div class="gnb">
+          <h1><img src="./imgs/logo.png" alt="megacoffee" /></h1>
+        </div>
+        <ul class="tab-nav"></ul>
+      </div>
+      <div class="cont-wrap"></div>
+      <div class="mega_modal">
+          <div class="modal">
+            <div class="mega_logo"><img src="./imgs/logo2.png" alt="" /></div>
+            <div class="mega_form">
+              <div class="modal_cont">
+                <span>같은 메뉴가 이미 담겨 있습니다.</span>
+              </div>
+              <a href="#" class="confirm">확인</a>
+            </div>
+          </div>
+    </div>
+    <div class="backcolor">
+        <section class="section-color"></section>
+    </div>
+    <div class="pagination-container">
+        <div class="prev-btn-wrap">
+          <button type="button" class="prev-button prev-next-btn">
+            <img src="./imgs/icon/back.svg" alt="">
+          </button>
+        </div>
+        <div class="next-btn-wrap">
+          <button type="button" class="next-button prev-next-btn">
+            <img src="./imgs/icon/next.svg" alt="">
+          </button>
+      </div>
+    </div>
+    <div>
+      <ul class="page-numbers">
+        <li class="page-circle btn-active"></li>
+        <li class="page-circle"></li>
+        <li class="page-circle"></li>
+      </ul>
+    </div>
+    <div class="order-area">
+      <div class="main-menu"></div>
+      <div class="main-right">
+        <div class="right-top">
+          <div class="remaining-time">
+            <p><img src="./imgs/icon/time.svg" alt="timer" >남은시간</p>
+            <p><span class="timer">180</span>초</p></div>
+          <hr> 
+          <div class="total-quantity"><p>선택한 상품</p><p><span class="quantity"></span>개</p></div>
+          
+        </div> <!-- right-top -->
+        <div class="btn-clear">
+          <a href="#">
+            <p>전체삭제</p>
+          </a></div> <!-- btn-clear -->
+        <div class="btn-payment">
+          <a href="#">
+              <div class="payment">
+                <img src="./imgs/payment.png" alt="payment">
+                <span class="payment-text">결제하기</span>
+              </div>
+              <div class="text-container">
+                  <span class="total-amount"></span><p>원</p>
+              </div>
+          </a>
+      </div>
+    </div> <!-- order-area -->
+    <div class="timeout_modal">
+      <div class="modal">
+        <div class="mega_logo">
+          <img src="./imgs/logo2.png" alt="" />
+        </div>
+        <div class="mega_form">
+          <div class="modal_content">
+            <span>주문시간이 만료되었습니다.</span>
+            <a href="#" class="confirm">확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
