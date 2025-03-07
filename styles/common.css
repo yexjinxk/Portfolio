@@ -172,6 +172,7 @@ nav .gnb li a::after{
 #home, #about{
     min-height: 100vh;
     text-align: center;
+    position: relative;
 }
 #skills{
     height: 70vh;
