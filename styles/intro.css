@@ -131,8 +131,9 @@
 }
 #home .scroll-down{
     position: absolute;
-    margin-top: 55%;
-    margin-left: 6%;
+    top: 90%;
+    left: 53%;
+    transform: translate(-53%, -90%);
 }
 #home .scroll-down a img{
     position: relative;
@@ -160,6 +161,7 @@
     border-radius: 2rem;
     box-shadow: 0px 5px 10px rgba(66, 92, 224, 0.4);
     position: relative;
+    margin: 0 auto;
 }
 #about .about_ct{
     display: flex;
